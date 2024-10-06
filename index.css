@@ -1,3 +1,44 @@
-#container {
-    background-color: red;;
+.character-card-container {
+    display: flex; /* Use Flexbox */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: space-around; /* Distribute space between cards */
+    margin: 0 auto; /* Center the container */
+}
+
+.character-card {
+    background-color: rgb(236, 235, 213);
+    margin: 5px; /* Margin between cards */
+    border: 2px solid black;
+    padding: 10px;
+    height: 300px;
+    width: calc(25% - 10px); /* Adjust width to fit 4 cards per row */
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+.character-card:hover {
+    background-color: rgb(220, 218, 174); /* Change background color on hover */
+    cursor: pointer;
+}
+
+.character-img {
+    border: 2px solid black;
+    margin: 5px;
+    width: 190px; /* Set a fixed width */
+    height: 190px; /* Set a fixed height */
+    object-fit: cover; /* Crop the image to fill the dimensions */
+    border-radius: 5px; /* Optional: add rounded corners */
+}
+
+h3, h4, h5 {
+    margin: 0;  /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+
+.header{
+    background-color: black;
+    margin: 5px;
+    padding : 10px;
+    color : white;
+    text-align: center;
 }

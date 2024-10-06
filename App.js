@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Header from './components/Header';
+import Body from './components/Body'
+import Footer from './components/Footer';
 
-// Two lines requiored tp render
-// get the root element
+
 const App = ()=>{
-return (<h1>
-    This is our application!
-  </h1>)
+  return (<>
+  <Header/>
+  <Body/>
+  <Footer/>
+  </>)
+  
 }
 
-const reactRoot = ReactDOM.createRoot(document.getElementById("root"))
-reactRoot.render(<App/>)
+const root = ReactDOM.createRoot(document.getElementById("root"))
+root.render(<App/>)
